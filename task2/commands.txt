@@ -1,0 +1,15 @@
+mkdir projects
+mkdir docs
+touch file1.txt file2.txt
+ls
+ls -l
+mv file1.txt projects/
+cp file2.txt docs/
+rm file2.txt
+cd projects
+ls
+cd ..
+mkdir -p archive/2025/june
+pwd
+rm -r archive
+nano commands.txt

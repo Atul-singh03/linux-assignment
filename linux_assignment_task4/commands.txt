@@ -1,0 +1,12 @@
+sudo groupadd devs
+sudo useradd -m -s /bin/bash -G devs atul
+sudo passwd atul
+id atul
+groups atul
+su - atul
+whoami
+touch testfile.txt
+chmod 740 testfile.txt
+exit
+sudo userdel -r atul
+sudo groupdel devs

@@ -1,0 +1,22 @@
+mkdir music documents images
+touch song1.mp3 song2.mp3 note.txt image1.png image2.jpg
+ls
+ls -l
+ls -la
+mv song1.mp3 song2.mp3 music/
+mv note.txt documents/
+mv image1.png image2.jpg images/
+cd music
+ls
+cd ..
+cd documents
+ls
+cd ..
+cd images
+ls
+cd ..
+pwd
+cd ~
+cd ~/task3/music
+cd ../documents
+cd ../../

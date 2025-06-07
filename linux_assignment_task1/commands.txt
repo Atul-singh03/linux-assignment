@@ -1,0 +1,15 @@
+mkdir linux_assignment_task1
+cd linux_assignment_task1
+touch demo_file.txt
+ls -l demo_file.txt
+chmod 754 demo_file.txt
+ls -l demo_file.txt
+touch demo_file.txt                  # Create file
+chmod 754 demo_file.txt             # Owner: rwx, Group: r, Others: r
+chmod 777 demo_file.txt             # Everyone: rwx
+chmod 744 demo_file.txt             # Owner: rwx, Group/Others: r
+chmod u-x demo_file.txt             # Remove x from owner
+chmod o= demo_file.txt              # Remove all from others
+chmod g=x demo_file.txt             # Group execute only
+chmod 740 demo_file.txt             # Final: Owner full, Group read
+

@@ -1,0 +1,40 @@
+# Basic File and Directory Commands
+touch sample.txt
+echo "Hello Linux" > sample.txt
+cat sample.txt
+head sample.txt
+tail sample.txt
+grep "Linux" sample.txt
+wc sample.txt
+cp sample.txt sample_copy.txt
+mv sample_copy.txt archive/
+rm sample_copy.txt
+mkdir projects
+ls
+ls -a
+ls -l
+find . -name "sample.txt"
+
+# File Permissions
+chmod 744 sample.txt
+chmod u+x sample.txt
+chmod go-rwx sample.txt
+ls -l sample.txt
+
+# Navigation and Info
+cd projects
+pwd
+cd ..
+uname -a
+whoami
+date
+cal
+
+# Advanced / Optional Commands
+ps
+top
+df -h
+du
+man ls
+history
+clear

@@ -1,4 +1,1 @@
-Line from master branch
-Master branch line
-Feature branch line
-Line from conflict-branch
+Line from both branches

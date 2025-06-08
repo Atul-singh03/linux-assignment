@@ -1,4 +1,5 @@
-# Git Practice
+<<<<<<< HEAD
+=======
+>>>>>>> feature-branch
 
-Changes from master
-Changes from feature-branch
+

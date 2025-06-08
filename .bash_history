@@ -317,3 +317,32 @@ git log --oneline --graph --all --decorate
 cd ~/  # or the directory where 'linux-assignment' folder is
 zip -r linux-assignment.zip linux-assignment/
 ls | grep linux-assignment.zip
+cd ~/home
+cd ~
+ls
+git init
+git remote add origin https://github.com/Atul-singh03/linux-assignment
+git remote remove origin
+git remote add origin https://github.com/Atul-singh03/linux-assignment.git
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
+git clone https://github.com/Atul-singh03/linux-assignment.git
+cd linux-assignment
+git checkout -b fix-conflicts
+git pull origin main
+git add linux-assignment
+git add task7/task7.txt
+git commit -m "Resolved merge conflicts"
+cd ~/linux-assignment
+git fetch origin
+git checkout main
+git pull origin main
+git merge feature-branch
+cd ~
+git fetch origin
+git checkout main
+git pull origin main
+git push origin main
+nano

@@ -1,0 +1,1140 @@
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: crown
+New password:
+Retype new password:
+passwd: password updated successfully
+Installation successful!
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.6.87.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jun  7 15:54:04 UTC 2025
+
+  System load:  0.84                Processes:             32
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       0
+  Memory usage: 9%                  IPv4 address for eth0: 172.31.158.188
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/crown/.hushlogin file.
+crown@DESKTOP-T2VHNG2:~$ mkdir linux_assignment_task1
+cd linux_assignment_task1
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ touch demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rw-r--r-- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod 754 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rwxr-xr-- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod 777 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rwxrwxrwx 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod 744 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rwxr--r-- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod u-x demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rw-r--r-- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod o= demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rw-r----- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod g=x demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rw---x--- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ chmod 740 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ ls -l demo_file.txt
+-rwxr----- 1 crown crown 0 Jun  7 15:59 demo_file.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ mkdir ../task2
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task1$ cd ../task2
+crown@DESKTOP-T2VHNG2:~/task2$ mkdir projects
+mkdir docs
+crown@DESKTOP-T2VHNG2:~/task2$ touch file1.txt file2.txt
+crown@DESKTOP-T2VHNG2:~/task2$ ls
+docs  file1.txt  file2.txt  projects
+crown@DESKTOP-T2VHNG2:~/task2$ ls -l
+total 8
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:32 docs
+-rw-r--r-- 1 crown crown    0 Jun  7 16:32 file1.txt
+-rw-r--r-- 1 crown crown    0 Jun  7 16:32 file2.txt
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:32 projects
+crown@DESKTOP-T2VHNG2:~/task2$ mv file1.txt projects/
+crown@DESKTOP-T2VHNG2:~/task2$ cp file2.txt docs/
+crown@DESKTOP-T2VHNG2:~/task2$ rm file2.txt
+crown@DESKTOP-T2VHNG2:~/task2$ cd projects
+ls
+file1.txt
+crown@DESKTOP-T2VHNG2:~/task2/projects$ cd ..
+crown@DESKTOP-T2VHNG2:~/task2$ mkdir -p archive/2025/june
+crown@DESKTOP-T2VHNG2:~/task2$ ^C
+crown@DESKTOP-T2VHNG2:~/task2$ pwd
+/home/crown/task2
+crown@DESKTOP-T2VHNG2:~/task2$ rm -r archive
+crown@DESKTOP-T2VHNG2:~/task2$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/task2$ cd ~
+mkdir task3
+cd task3
+crown@DESKTOP-T2VHNG2:~/task3$ mkdir music documents images
+touch song1.mp3 song2.mp3 note.txt image1.png image2.jpg
+crown@DESKTOP-T2VHNG2:~/task3$ ls
+ls -l
+ls -la
+documents  image1.png  image2.jpg  images  music  note.txt  song1.mp3  song2.mp3
+total 12
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 documents
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 image1.png
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 image2.jpg
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 images
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 music
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 note.txt
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 song1.mp3
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 song2.mp3
+total 20
+drwxr-xr-x 5 crown crown 4096 Jun  7 16:37 .
+drwxr-x--- 7 crown crown 4096 Jun  7 16:37 ..
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 documents
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 image1.png
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 image2.jpg
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 images
+drwxr-xr-x 2 crown crown 4096 Jun  7 16:37 music
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 note.txt
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 song1.mp3
+-rw-r--r-- 1 crown crown    0 Jun  7 16:37 song2.mp3
+crown@DESKTOP-T2VHNG2:~/task3$ mv song1.mp3 song2.mp3 music/
+mv note.txt documents/
+mv image1.png image2.jpg images/
+crown@DESKTOP-T2VHNG2:~/task3$ cd music
+ls
+cd ..
+cd documents
+ls
+cd ..
+cd images
+ls
+cd ..
+song1.mp3  song2.mp3
+note.txt
+image1.png  image2.jpg
+crown@DESKTOP-T2VHNG2:~/task3$ pwd
+/home/crown/task3
+crown@DESKTOP-T2VHNG2:~/task3$ cd ~
+crown@DESKTOP-T2VHNG2:~$ cd ~/task3/music
+crown@DESKTOP-T2VHNG2:~/task3/music$ cd ../documents
+crown@DESKTOP-T2VHNG2:~/task3/documents$ cd ../../
+crown@DESKTOP-T2VHNG2:~$ rm documents/note.txt
+rm: cannot remove 'documents/note.txt': No such file or directory
+crown@DESKTOP-T2VHNG2:~$  cd ~/task3
+crown@DESKTOP-T2VHNG2:~/task3$ cd ~/documents/
+-bash: cd: /home/crown/documents/: No such file or directory
+crown@DESKTOP-T2VHNG2:~/task3$ cd documents
+crown@DESKTOP-T2VHNG2:~/task3/documents$ rm note.txt
+crown@DESKTOP-T2VHNG2:~/task3/documents$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/task3/documents$ cd ~
+mkdir linux_assignment_task4
+cd linux_assignment_task4
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ sudo groupadd devs
+[sudo] password for crown:
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ sudo useradd -m -s /bin/bash -G devs atul
+sudo passwd atul
+New password:
+Retype new password:
+passwd: password updated successfully
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ id atul
+groups atul
+uid=1001(atul) gid=1002(atul) groups=1002(atul),1001(devs)
+atul : atul devs
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ su - atul
+whoami
+Password:
+su: Authentication failure
+crown
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ su - atul
+whoami
+Password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.6.87.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jun  7 16:46:05 UTC 2025
+
+  System load:  0.0                 Processes:             31
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       1
+  Memory usage: 9%                  IPv4 address for eth0: 172.31.158.188
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/atul/.hushlogin file.
+atul@DESKTOP-T2VHNG2:~$ touch testfile.txt
+chmod 740 testfile.txt
+ls -l testfile.txt
+-rwxr----- 1 atul atul 0 Jun  7 16:46 testfile.txt
+atul@DESKTOP-T2VHNG2:~$ exit
+logout
+crown
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/linux_assignment_task4$ mkdir ~/task5
+cd ~/task5
+crown@DESKTOP-T2VHNG2:~/task5$ echo "Hello Atul Singh" > info.txt
+echo "Linux is powerful" >> info.txt
+crown@DESKTOP-T2VHNG2:~/task5$ cat info.txt         # Shows full content
+head -n 1 info.txt   # Shows first line
+tail -n 1 info.txt   # Shows last line
+Hello Atul Singh
+Linux is powerful
+Hello Atul Singh
+Linux is powerful
+crown@DESKTOP-T2VHNG2:~/task5$ wc info.txt          # word count, line count, byte count
+ 2  6 35 info.txt
+crown@DESKTOP-T2VHNG2:~/task5$ grep "Linux" info.txt
+Linux is powerful
+crown@DESKTOP-T2VHNG2:~/task5$ touch one.txt two.txt three.txt
+crown@DESKTOP-T2VHNG2:~/task5$ mv one.txt renamed_one.txt
+crown@DESKTOP-T2VHNG2:~/task5$ cp two.txt copied_two.txt
+crown@DESKTOP-T2VHNG2:~/task5$ rm three.txt
+crown@DESKTOP-T2VHNG2:~/task5$ date
+cal
+Sat Jun  7 16:51:52 UTC 2025
+Command 'cal' not found, did you mean:
+  command 'fcal' from snap fcal (2.7.5)
+  command 'cat' from deb coreutils (9.4-2ubuntu2)
+  command 'cxl' from deb ndctl (76-1ubuntu1)
+  command 'col' from deb bsdextrautils (2.39.3-9ubuntu6.1)
+See 'snap info <snapname>' for additional versions.
+crown@DESKTOP-T2VHNG2:~/task5$ whoami
+uname -a
+crown
+Linux DESKTOP-T2VHNG2 6.6.87.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+crown@DESKTOP-T2VHNG2:~/task5$ ls -a
+.  ..  copied_two.txt  info.txt  renamed_one.txt  two.txt
+crown@DESKTOP-T2VHNG2:~/task5$ find . -name "*.txt"
+./renamed_one.txt
+./copied_two.txt
+./two.txt
+./info.txt
+crown@DESKTOP-T2VHNG2:~/task5$ chmod 444 info.txt
+crown@DESKTOP-T2VHNG2:~/task5$ nano commands.txt
+crown@DESKTOP-T2VHNG2:~/task5$ git --version
+git version 2.43.0
+crown@DESKTOP-T2VHNG2:~/task5$ git config --global user.name "Atul Singh"
+git config --global user.email "atulsingh12axyz@gmail.com"
+crown@DESKTOP-T2VHNG2:~/task5$ git config --list
+user.name=Atul Singh
+user.email=atulsingh12axyz@gmail.com
+crown@DESKTOP-T2VHNG2:~/task5$ cd ~
+crown@DESKTOP-T2VHNG2:~$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/crown/.git/
+crown@DESKTOP-T2VHNG2:~$ touch README.md
+echo "This is Task 1 of Linux Assignment" > README.md
+crown@DESKTOP-T2VHNG2:~$ git add .
+git commit -m "Initial commit for Task 1"
+[master (root-commit) 025e4b1] Initial commit for Task 1
+ 25 files changed, 262 insertions(+)
+ create mode 100644 .bash_logout
+ create mode 100644 .bashrc
+ create mode 100644 .cache/motd.legal-displayed
+ create mode 100644 .gitconfig
+ create mode 100644 .lesshst
+ create mode 100644 .motd_shown
+ create mode 100644 .profile
+ create mode 100644 .sudo_as_admin_successful
+ create mode 100644 README.md
+ create mode 100644 linux_assignment_task1/commands.txt
+ create mode 100755 linux_assignment_task1/demo_file.txt
+ create mode 100644 linux_assignment_task4/commands.txt
+ create mode 100644 task2/commands.txt
+ create mode 100644 task2/docs/file2.txt
+ create mode 100644 task2/projects/file1.txt
+ create mode 100644 task3/documents/commands.txt
+ create mode 100644 task3/images/image1.png
+ create mode 100644 task3/images/image2.jpg
+ create mode 100644 task3/music/song1.mp3
+ create mode 100644 task3/music/song2.mp3
+ create mode 100644 task5/commands.txt
+ create mode 100644 task5/copied_two.txt
+ create mode 100644 task5/info.txt
+ create mode 100644 task5/renamed_one.txt
+ create mode 100644 task5/two.txt
+crown@DESKTOP-T2VHNG2:~$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+git branch -M master
+git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Atul-singh03/linux-assignment/'
+crown@DESKTOP-T2VHNG2:~$ crown@DESKTOP-T2VHNG2:~$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+git branch -M master
+git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Atul-singh03/linux-assignment/'
+crown@DESKTOP-T2VHNG2:~$^C
+crown@DESKTOP-T2VHNG2:~$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (26/26), 4.73 KiB | 969.00 KiB/s, done.
+Total 26 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Atul-singh03/linux-assignment
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+crown@DESKTOP-T2VHNG2:~$ cd ~
+mkdir task6
+cd task6
+git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/crown/task6/.git/
+crown@DESKTOP-T2VHNG2:~/task6$ echo "# Git Practice" > README.md
+crown@DESKTOP-T2VHNG2:~/task6$ git add README.md
+crown@DESKTOP-T2VHNG2:~/task6$ git commit -m "Initial commit with README"
+[master (root-commit) b35aa26] Initial commit with README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+crown@DESKTOP-T2VHNG2:~/task6$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+git branch -M master
+crown@DESKTOP-T2VHNG2:~/task6$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+To https://github.com/Atul-singh03/linux-assignment
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Atul-singh03/linux-assignment'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+crown@DESKTOP-T2VHNG2:~/task6$ git pull --rebase origin master
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 26 (delta 0), reused 26 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (26/26), 4.71 KiB | 150.00 KiB/s, done.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+error: could not apply b35aa26... Initial commit with README
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply b35aa26... Initial commit with README
+crown@DESKTOP-T2VHNG2:~/task6$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+To https://github.com/Atul-singh03/linux-assignment
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Atul-singh03/linux-assignment'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+crown@DESKTOP-T2VHNG2:~/task6$ nano README.md
+crown@DESKTOP-T2VHNG2:~/task6$ git add README.md
+crown@DESKTOP-T2VHNG2:~/task6$ git rebase --continue
+[detached HEAD 4fbbd16] Initial commit with README
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/master.
+crown@DESKTOP-T2VHNG2:~/task6$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   025e4b1..4fbbd16  master -> master
+branch 'master' set up to track 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/task6$ cd ~
+crown@DESKTOP-T2VHNG2:~$ mkdir task7
+cd task7
+crown@DESKTOP-T2VHNG2:~/task7$ echo "Task 7 file added" > task7.txt
+crown@DESKTOP-T2VHNG2:~/task7$ git add task7/task7.txt
+git commit -m "Task 7: Added task7.txt file"
+warning: could not open directory 'task7/task7/': No such file or directory
+fatal: pathspec 'task7/task7.txt' did not match any files
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../task6/
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/task7$ cd ~/linux-assignment/task7
+-bash: cd: /home/crown/linux-assignment/task7: No such file or directory
+crown@DESKTOP-T2VHNG2:~/task7$ cd ~/linux-assignment
+-bash: cd: /home/crown/linux-assignment: No such file or directory
+crown@DESKTOP-T2VHNG2:~/task7$ mkdir ~/linux-assignment
+cd ~/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/crown/linux-assignment/.git/
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ mkdir task7
+echo "This is Task 7 file" > task7/task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add task7/task7.txt
+git commit -m "Task 7: Added task7.txt file"
+[master (root-commit) 391ab4b] Task 7: Added task7.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task7/task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+To https://github.com/Atul-singh03/linux-assignment
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Atul-singh03/linux-assignment'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git pull --rebase origin master
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 29 (delta 1), reused 29 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (29/29), 4.96 KiB | 82.00 KiB/s, done.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Successfully rebased and updated refs/heads/master.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add <file_with_conflict>
+git rebase --continue
+-bash: syntax error near unexpected token `newline'
+fatal: No rebase in progress?
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 357 bytes | 357.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   4fbbd16..dccf62e  master -> master
+branch 'master' set up to track 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ cd linux-assignment/task7
+-bash: cd: linux-assignment/task7: No such file or directory
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ mkdir -p linux-assignment/task7
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ cd linux-assignment/task7
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/crown/linux-assignment/linux-assignment/task7/.git/
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ echo "This is Task 7 file" > task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git add task7.txt
+git commit -m "Task 7: Added task7.txt file"
+[master (root-commit) 249fae7] Task 7: Added task7.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git pull --rebase origin master
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 33 (delta 2), reused 32 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (33/33), 5.26 KiB | 173.00 KiB/s, done.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Successfully rebased and updated refs/heads/master.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git push -u origin master
+Username for 'https://github.com': ^C
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ git push -u origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   dccf62e..196490f  master -> master
+branch 'master' set up to track 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/linux-assignment/task7$ cd ~/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ echo "This file is from feature branch" > task8.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add task8.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git commit -m "Task 8: Added task8.txt in feature-branch"
+[feature-branch 8076b0e] Task 8: Added task8.txt in feature-branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task8.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push -u origin feature-branch
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (36/36), 5.54 KiB | 709.00 KiB/s, done.
+Total 36 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'feature-branch' on GitHub by visiting:
+remote:      https://github.com/Atul-singh03/linux-assignment/pull/new/feature-branch
+remote:
+To https://github.com/Atul-singh03/linux-assignment
+ * [new branch]      feature-branch -> feature-branch
+branch 'feature-branch' set up to track 'origin/feature-branch'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git pull origin master
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 1.25 KiB | 321.00 KiB/s, done.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+   dccf62e..611db1f  master     -> origin/master
+Updating dccf62e..611db1f
+Fast-forward
+ task7.txt | 1 +
+ task8.txt | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 task7.txt
+ create mode 100644 task8.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ cd ~/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git log --oneline
+611db1f (HEAD -> master, origin/master) Merge pull request #1 from Atul-singh03/feature-branch
+8076b0e (origin/feature-branch, feature-branch) Task 8: Added task8.txt in feature-branch
+196490f Task 7: Added task7.txt file
+dccf62e Task 7: Added task7.txt file
+4fbbd16 Initial commit with README
+025e4b1 Initial commit for Task 1
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git reset --soft HEAD~1
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git reset
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ rm task8.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git commit -am "Removed task8.txt and undone last commit"
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        linux-assignment/
+
+nothing added to commit but untracked files present (use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ ls
+README.md  linux-assignment  linux_assignment_task1  linux_assignment_task4  task2  task3  task5  task7  task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git status
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        linux-assignment/
+
+nothing added to commit but untracked files present (use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ ls
+README.md  linux-assignment  linux_assignment_task1  linux_assignment_task4  task2  task3  task5  task7  task7.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git status
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        linux-assignment/
+
+nothing added to commit but untracked files present (use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add -A
+warning: adding embedded git repository: linux-assignment/task7
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> linux-assignment/task7
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached linux-assignment/task7
+hint:
+hint: See "git help submodule" for more information.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git commit -m "Removed task8.txt from repo"
+[master 474c31d] Removed task8.txt from repo
+ 1 file changed, 1 insertion(+)
+ create mode 160000 linux-assignment/task7
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+To https://github.com/Atul-singh03/linux-assignment
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Atul-singh03/linux-assignment'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git pull origin master --rebase
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+warning: unable to rmdir 'linux-assignment/task7': Directory not empty
+Successfully rebased and updated refs/heads/master.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git log --oneline
+abae0dd (HEAD -> master) Removed task8.txt from repo
+611db1f (origin/master) Merge pull request #1 from Atul-singh03/feature-branch
+8076b0e (origin/feature-branch, feature-branch) Task 8: Added task8.txt in feature-branch
+196490f Task 7: Added task7.txt file
+dccf62e Task 7: Added task7.txt file
+4fbbd16 Initial commit with README
+025e4b1 Initial commit for Task 1
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   611db1f..abae0dd  master -> master
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git rm --cached linux-assignment/task7
+rm 'linux-assignment/task7'
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git log --oneline
+abae0dd (HEAD -> master, origin/master) Removed task8.txt from repo
+611db1f Merge pull request #1 from Atul-singh03/feature-branch
+8076b0e (origin/feature-branch, feature-branch) Task 8: Added task8.txt in feature-branch
+196490f Task 7: Added task7.txt file
+dccf62e Task 7: Added task7.txt file
+4fbbd16 Initial commit with README
+025e4b1 Initial commit for Task 1
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+git pull origin master
+D       linux-assignment/task7
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout -b feature-branch
+fatal: a branch named 'feature-branch' already exists
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add .
+git commit -m "Changes in feature-branch"
+warning: adding embedded git repository: linux-assignment/task7
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> linux-assignment/task7
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached linux-assignment/task7
+hint:
+hint: See "git help submodule" for more information.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push -u origin feature-branch
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+branch 'feature-branch' set up to track 'origin/feature-branch'.
+Everything up-to-date
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+# Edit the same file(s) changed in feature-branch to cause conflict
+git add .
+git commit -m "Conflicting changes in master"
+git push origin master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Everything up-to-date
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ <<<<<<< HEAD
+Changes from master
+=======
+Changes from feature-branch
+>>>>>>> feature-branch
+-bash: syntax error near unexpected token `<<<'
+Changes: command not found
+=======: command not found
+Changes: command not found
+-bash: syntax error near unexpected token `>>'
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ Changes from master
+Changes: command not found
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ echo "Changes from master" >> README.md
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add README.md
+git commit -m "Change from master"
+git push origin master
+[master 66160db] Change from master
+ 1 file changed, 1 insertion(+)
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   abae0dd..66160db  master -> master
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ echo "Changes from feature-branch" >> README.md
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add README.md
+git commit -m "Change from feature-branch"
+git push origin feature-branch
+[master b195e7d] Change from feature-branch
+ 1 file changed, 1 insertion(+)
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Everything up-to-date
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git checkout master
+git pull origin master
+git merge feature-branch
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Already up to date.
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ nano README.md
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ Changes from master
+Changes: command not found
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ nano README.md
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git add README.md
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git commit -m "Resolved merge conflict in README.md"
+[master 91df956] Resolved merge conflict in README.md
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ git push origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 620 bytes | 620.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   66160db..91df956  master -> master
+crown@DESKTOP-T2VHNG2:~/linux-assignment$ mkdir git-practice
+cd git-practice
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/crown/linux-assignment/git-practice/.git/
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ echo "Hello Git" > file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git commit -m "Initial commit"
+[master (root-commit) b52de55] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ echo "More text" >> file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git diff
+diff --git a/file.txt b/file.txt
+index 9f4d96d..7b40c55 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1,2 @@
+ Hello Git
++More text
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git commit -m "Added more text"
+[master e5319b5] Added more text
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git branch feature-branch
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout feature-branch
+Switched to branch 'feature-branch'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ echo "Feature work here" >> file.txt
+git add file.txt
+git commit -m "Work on feature branch"
+[feature-branch 386866c] Work on feature branch
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+Switched to branch 'master'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git merge feature-branch
+Updating e5319b5..386866c
+Fast-forward
+ file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ cat file.txt
+Hello Git
+More text
+Feature work here
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+nothing to commit, working tree clean
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ cat file.txt
+Hello Git
+More text
+Feature work here
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+nothing to commit, working tree clean
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$
+-bash: crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$: No such file or directory
+-bash: crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$: No such file or directory
+Command 'Hello' not found, did you mean:
+  command 'hello' from snap hello (2.10)
+  command 'hello' from deb hello (2.10-3)
+  command 'hello' from deb hello-traditional (2.10-6)
+  command 'jello' from deb jello (1.6.0-1)
+See 'snap info <snapname>' for additional versions.
+Command 'More' not found, did you mean:
+  command 'more' from deb util-linux (2.39.3-9ubuntu6.2)
+  command 'kore' from deb kore (4.1.0-6)
+Try: sudo apt install <deb name>
+Feature: command not found
+-bash: crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$: No such file or directory
+On: command not found
+nothing: command not found
+-bash: crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$: No such file or directory
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+git pull origin master
+Already on 'master'
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout -b feature-branch
+fatal: a branch named 'feature-branch' already exists
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Changed file.txt on feature-branch"
+[master 0de2b2e] Changed file.txt on feature-branch
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+nano file.txt
+Already on 'master'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Changed file.txt on master"
+[master dd604ff] Changed file.txt on master
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git merge feature-branch
+Already up to date.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+Already on 'master'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git status
+On branch master
+nothing to commit, working tree clean
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Update file.txt on master"
+[master fb90697] Update file.txt on master
+ 1 file changed, 4 deletions(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout -b feature-branch
+fatal: a branch named 'feature-branch' already exists
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Update file.txt on feature branch"
+[master 5ec4d6a] Update file.txt on feature branch
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+Already on 'master'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git merge feature-branch
+Already up to date.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+git pull origin master
+Already on 'master'
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Change line 4 on master branch"
+[master 889c5fc] Change line 4 on master branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout feature-branch
+Switched to branch 'feature-branch'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Conflicting change on feature branch"
+[feature-branch f3e0f92] Conflicting change on feature branch
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+git merge feature-branch
+Switched to branch 'master'
+Auto-merging file.txt
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add <resolved-file>
+-bash: syntax error near unexpected token `newline'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git log --oneline --graph --all
+* f3e0f92 (feature-branch) Conflicting change on feature branch
+| * 889c5fc (HEAD -> master) Change line 4 on master branch
+| * 5ec4d6a Update file.txt on feature branch
+| * fb90697 Update file.txt on master
+| * dd604ff Changed file.txt on master
+| * 0de2b2e Changed file.txt on feature-branch
+|/
+* 386866c Work on feature branch
+* e5319b5 Added more text
+* b52de55 Initial commit
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout -- filename
+error: pathspec 'filename' did not match any file(s) known to git
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ cd ~/linux-assignment/git-practice
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout -b conflict-branch
+Switched to a new branch 'conflict-branch'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Edited file.txt in conflict-branch"
+[conflict-branch e056d3e] Edited file.txt in conflict-branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git checkout master
+Switched to branch 'master'
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Edited file.txt in master"
+[master 0266b65] Edited file.txt in master
+ 1 file changed, 1 insertion(+)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git merge conflict-branch
+Auto-merging file.txt
+Merge made by the 'ort' strategy.
+ file.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ nano file.txt
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git add file.txt
+git commit -m "Resolved conflict in file.txt"
+[master 79d8b7d] Resolved conflict in file.txt
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git remote add origin https://github.com/Atul-singh03/linux-assignment
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git push origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+To https://github.com/Atul-singh03/linux-assignment
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Atul-singh03/linux-assignment'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git pull origin master --rebase
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (31/31), done.
+remote: Total 52 (delta 10), reused 46 (delta 5), pack-reused 0 (from 0)
+Unpacking objects: 100% (52/52), 7.68 KiB | 137.00 KiB/s, done.
+From https://github.com/Atul-singh03/linux-assignment
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Successfully rebased and updated refs/heads/master.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git push origin master
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (33/33), 2.86 KiB | 488.00 KiB/s, done.
+Total 33 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 1 local object.
+To https://github.com/Atul-singh03/linux-assignment
+   91df956..dcec715  master -> master
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git push origin master --force
+Username for 'https://github.com': Atul-singh03
+Password for 'https://Atul-singh03@github.com':
+Everything up-to-date
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git stash
+No local changes to save
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git stash list
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git stash pop
+No stash entries found.
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ git log --oneline --graph --all --decorate
+* dcec715 (HEAD -> master, origin/master) Resolved conflict in file.txt
+* 7b5d6c5 Edited file.txt in conflict-branch
+* d9d4acd Edited file.txt in master
+* 75e4ea2 Change line 4 on master branch
+* 647892b Update file.txt on feature branch
+* 7b3d1e4 Update file.txt on master
+* b5ec971 Changed file.txt on master
+* 0328b6c Changed file.txt on feature-branch
+* 8e5e485 Work on feature branch
+* 7919b81 Added more text
+* 53cb209 Initial commit
+* 91df956 Resolved merge conflict in README.md
+* b195e7d Change from feature-branch
+* 66160db Change from master
+* abae0dd Removed task8.txt from repo
+*   611db1f Merge pull request #1 from Atul-singh03/feature-branch
+|\
+| * 8076b0e Task 8: Added task8.txt in feature-branch
+* | 196490f Task 7: Added task7.txt file
+|/
+* dccf62e Task 7: Added task7.txt file
+* 4fbbd16 Initial commit with README
+* 025e4b1 Initial commit for Task 1
+* e056d3e (conflict-branch) Edited file.txt in conflict-branch
+* 889c5fc Change line 4 on master branch
+* 5ec4d6a Update file.txt on feature branch
+* fb90697 Update file.txt on master
+* dd604ff Changed file.txt on master
+* 0de2b2e Changed file.txt on feature-branch
+| * f3e0f92 (feature-branch) Conflicting change on feature branch
+|/
+* 386866c Work on feature branch
+* e5319b5 Added more text
+* b52de55 Initial commit
+(END)
+* d9d4acd Edited file.txt in master
+* 75e4ea2 Change line 4 on master branch
+* 647892b Update file.txt on feature branch
+* 7b3d1e4 Update file.txt on master
+* b5ec971 Changed file.txt on master
+* 0328b6c Changed file.txt on feature-branch
+* 8e5e485 Work on feature branch
+* 7919b81 Added more text
+* 53cb209 Initial commit
+* 91df956 Resolved merge conflict in README.md
+* b195e7d Change from feature-branch
+* 66160db Change from master
+* abae0dd Removed task8.txt from repo
+*   611db1f Merge pull request #1 from Atul-singh03/feature-branch
+|\
+| * 8076b0e Task 8: Added task8.txt in feature-branch
+* | 196490f Task 7: Added task7.txt file
+|/
+* dccf62e Task 7: Added task7.txt file
+* 4fbbd16 Initial commit with README
+* 025e4b1 Initial commit for Task 1
+* e056d3e (conflict-branch) Edited file.txt in conflict-branch
+* 889c5fc Change line 4 on master branch
+* 5ec4d6a Update file.txt on feature branch
+* fb90697 Update file.txt on master
+* dd604ff Changed file.txt on master
+* 0de2b2e Changed file.txt on feature-branch
+| * f3e0f92 (feature-branch) Conflicting change on feature branch
+|/
+* 386866c Work on feature branch
+* e5319b5 Added more text
+* b52de55 Initial commit
+
+crown@DESKTOP-T2VHNG2:~/linux-assignment/git-practice$ cd ~/  # or the directory where 'linux-assignment' folder is
+crown@DESKTOP-T2VHNG2:~$ zip -r linux-assignment.zip linux-assignment/
+Command 'zip' not found, but can be installed with:
+sudo apt install zip
+crown@DESKTOP-T2VHNG2:~$ ls | grep linux-assignment.zip
+crown@DESKTOP-T2VHNG2:~$

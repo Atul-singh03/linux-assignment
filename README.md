@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-=======
->>>>>>> feature-branch
 
 
